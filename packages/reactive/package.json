@@ -1,0 +1,44 @@
+{
+  "name": "@ethers-react/reactive",
+  "description": "Ethers React Reactive Extension",
+  "version": "0.0.1",
+  "author": "Kames <kames@horizin.io> (https://horizin.io)",
+  "license": "MIT",
+  "keywords": [
+    "ethereum",
+    "ethers",
+    "web3",
+    "react",
+    "react-hooks",
+    "hooks"
+  ],
+  "main": "dist/index.js",
+  "main:src": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "cross-env BABEL_ENV=production babel src --out-dir dist"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "dependencies": {
+    "ethers": "^4.0.43"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "cross-env": "^6.0.3",
+    "eslint": "latest",
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "bugs": {
+    "url": "https://github.com/horizin/ethers-react/issues",
+    "email": "info@kamescg.com"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "ethers-react",
+  "version": "0.0.0",
+  "description": "A React Library to Simplify Interactions with the Ethereum Blockchain",
+  "main": "index.js",
+  "author": "Kames <kames@horizin.io>",
+  "license": "MIT",
+  "keywords": [
+    "ethereum",
+    "ethers",
+    "web3",
+    "react",
+    "react-hooks",
+    "hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/horizin/ethers-react.git"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "publish:lerna": "lerna publish",
+    "clean": "lerna clean --yes && lerna exec -- rm -rf dist/ .rts2_cache_{cjs,esm}/",
+    "build": "lerna run build",
+    "start": "lerna run --parallel --no-bail start -- --noClean",
+    "lint": "lerna run lint --parallel",
+    "test": "lerna run test --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^3.16.4",
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  }
+}
